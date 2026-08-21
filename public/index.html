@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>メモ帳</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>メモ帳</h1>
+      <p id="status" role="status"></p>
+
+      <form id="new-memo">
+        <input id="new-title" name="title" placeholder="タイトル" required />
+        <textarea id="new-body" name="body" placeholder="本文" rows="3"></textarea>
+        <button type="submit">追加</button>
+      </form>
+
+      <ul id="memos"></ul>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

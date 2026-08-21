@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+#status:empty {
+  display: none;
+}
+
+#status {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 0.5rem;
+}
+
+ul {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0.75rem;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 0.375rem;
+}
+
+li h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+li p {
+  margin: 0 0 0.5rem;
+  white-space: pre-wrap;
+}
+
+li time {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
